@@ -13,6 +13,7 @@ BONUS: que el modal muestre la hora actual y se actualice cada segundo.
 2. Consume API
 3. Muestra nombre y apellido
 4. Componente botón con ANT
-5. Mostrar en el modal foto, fecha registro y edad actual y el titulo es el nombre y apellidos
+5. Mostrar en el modal foto, fecha registro y edad actual
+6. el titulo es el nombre y apellidos
 
-6. Componente horaActual
+7. Componente horaActual
