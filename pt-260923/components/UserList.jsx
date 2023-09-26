@@ -22,7 +22,7 @@ const UserList = () => {
     const showUserList = usersData.map((actualElement)=>{
         return(
             <>
-            <ul>
+            <ul key={actualElement.id.value}>
                 <li>{actualElement.name.first} {actualElement.name.last} 
                 <ModalUserData user={actualElement}></ModalUserData>
                 </li>
