@@ -17,3 +17,5 @@ BONUS: que el modal muestre la hora actual y se actualice cada segundo.
 6. el titulo es el nombre y apellidos
 
 7. Componente horaActual
+8. Llamar componente dentro del Modal!
+
