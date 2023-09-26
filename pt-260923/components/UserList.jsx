@@ -16,9 +16,21 @@ const UserList = () => {
 
         }catch(error){"error detected", error}
     }
+
+    const showUserList = usersData.map((actualElement)=>{
+        return(
+            <>
+            <ul>
+                <li>{actualElement.name.first} {actualElement.name.last}</li>
+            </ul>
+            </>
+        )
+    })
     
   return (
-    <div>UserList</div>
+    <>
+    {showUserList}
+    </>
   )
 }
 
