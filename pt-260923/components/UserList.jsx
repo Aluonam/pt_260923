@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import ModalUserData from './ModalUserData'
+import RefreshUsers from './RefreshUsers'
 
 const UserList = () => {
 
@@ -32,6 +33,7 @@ const UserList = () => {
     
   return (
     <>
+    <RefreshUsers apiCall={apiCall}></RefreshUsers>
     {showUserList}
     </>
   )
