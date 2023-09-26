@@ -23,7 +23,7 @@ const UserList = () => {
             <>
             <ul>
                 <li>{actualElement.name.first} {actualElement.name.last} 
-                <ModalUserData></ModalUserData>
+                <ModalUserData user={actualElement}></ModalUserData>
                 </li>
             </ul>
             </>
