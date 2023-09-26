@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import ModalUserData from './ModalUserData'
+import ActualHour from './ActualHour'
 
 const UserList = () => {
 
@@ -32,6 +33,7 @@ const UserList = () => {
     
   return (
     <>
+    <ActualHour></ActualHour>
     {showUserList}
     </>
   )
