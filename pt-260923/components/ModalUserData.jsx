@@ -15,9 +15,9 @@ const ModalUserData = ({user}) => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Open Modal
+        Detalles
       </Button>
-      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <Modal title={`${user.name.first} ${user.name.last}`} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <img src={user.picture.large}></img>
         <p>{user.registered.date}</p>
         <p>{user.dob.age}</p>
