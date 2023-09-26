@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
+import ActualHour from './ActualHour';
 
 const ModalUserData = ({user}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,6 +22,7 @@ const ModalUserData = ({user}) => {
         <img src={user.picture.large}></img>
         <p>{user.registered.date}</p>
         <p>{user.dob.age}</p>
+        <ActualHour></ActualHour>
       </Modal>
     </>
   );

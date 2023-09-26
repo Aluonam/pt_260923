@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 
 const ActualHour = () => {
 
-    const [hour, setHour] = useState("00:00:00")
+    const fecha = new Date();
+
+    const [hour, setHour] = useState(fecha.toLocaleString().split(",")[1])
 
     useEffect(() => {
       const interval = setInterval(()=>{
@@ -10,6 +12,7 @@ const ActualHour = () => {
         const hour = fecha.toLocaleString().split(",")[1];
         setHour(hour)
       },1000)
+      return () => clearInterval(interval);
     }, [])
     
   return (
