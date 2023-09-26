@@ -8,7 +8,7 @@ const ActualHour = () => {
       const interval = setInterval(()=>{
         const fecha = new Date();
         const hour = fecha.toLocaleString().split(",")[1];
-        console.log(hour)
+        setHour(hour)
       },1000)
     }, [])
     
